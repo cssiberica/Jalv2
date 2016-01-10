@@ -1,0 +1,67 @@
+;
+; I removed the following knowledge from the compiler, so this
+; file needs to be included
+;
+; these are values assigned to target_chip
+;
+const pic_16f877  = 1
+const pic_16f628  = 2
+const pic_16c84   = 3
+const pic_16f84   = 4
+const pic_12c509a = 5
+const pic_12f675  = 6
+const pic_18f242  = 7
+const pic_18f252  = 8
+const pic_18f452  = 9
+const pic_SX18    = 10
+const pic_SX28    = 11
+const pic_SX      = 12
+const pic_16f818  = 13
+const pic_16f819  = 14
+const pic_16f873  = 15
+const pic_16f874  = 16
+const pic_16f876  = 17
+const pic_16f88   = 18
+const pic_16f87   = 19
+
+const pic_16f873A  = 20
+const pic_16f874A  = 21
+const pic_16f876A  = 22
+const pic_16f877A  = 23
+
+const pic_16f505   = 24
+const pic_16f630   = 25
+
+const pic_18c242   = 26
+const pic_18c252   = 27
+const pic_18c442   = 28
+const pic_18c452   = 29
+
+const pic_18f2420  = 30
+const pic_18f2520  = 31
+const pic_18f4420  = 32
+const pic_18f4520  = 33
+
+;
+; these are assigned to target_cpu. 
+; nb : These values are used internally by the compiler
+;      and MUST NOT CHANGE. Currently the compiler only
+;      uses pic_12 & pic_14
+;
+const pic_12 = 1
+const pic_14 = 2
+const pic_16 = 3
+const sx_12  = 4
+
+const bit  on    = 1
+const bit  off   = 0
+const byte w     = 0 ; these are needed by the assembler (ex movf x,w)
+const byte f     = 1
+const bit  true  = 1
+const bit  false = 0
+const bit  high  = 1
+const bit  low   = 0
+
+const bit  PJAL  = 1
+
+
